@@ -4,7 +4,7 @@ import React from "react";
 
 export default function AuthLayout() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Auth Layout</Text>
       <Slot />
     </View>
