@@ -7,20 +7,34 @@ export default function App() {
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row",
+        justifyContent: "center", // main axis
+        alignItems: "center",
+        // alignContent: "center",
+        // flexWrap: "wrap",
       }}
     >
       <View
         style={{
           backgroundColor: "dodgerblue",
           // flex: 2,
+          // flexBasis: 100, // width or height depending on flexDirection
+          // flexGrow: 1,
+          // flex: 1,
+          // width: 100,
+          top: 50,
           width: 100,
+          // flex: -1,
           height: 100,
+          // alignSelf: "flex-start",
         }}
       />
       <View
         style={{
           backgroundColor: "gold",
           width: 100,
+          top: 20,
+          position: "relative",
+          left: 20,
           height: 100,
         }}
       />
@@ -31,6 +45,20 @@ export default function App() {
           height: 100,
         }}
       />
+      {/* <View
+        style={{
+          backgroundColor: "gray",
+          width: 100,
+          height: 100,
+        }}
+      /> */}
+      {/* <View
+        style={{
+          backgroundColor: "greenyellow",
+          width: 100,
+          height: 100,
+        }}
+      /> */}
     </View>
   );
 }
